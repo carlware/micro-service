@@ -8,7 +8,6 @@ import (
 	"arquil/accounts/internal/cases/account"
 	"arquil/accounts/internal/models"
 	"context"
-	"fmt"
 
 	e "github.com/carlware/go-common/errors"
 	"github.com/carlware/go-common/log"

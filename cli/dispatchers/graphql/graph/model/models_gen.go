@@ -2,17 +2,6 @@
 
 package model
 
-import (
-	"github.com/99designs/gqlgen/graphql"
-)
-
-type CreateAccountantInput struct {
-	CondoID     string         `json:"condoID"`
-	AccountID   string         `json:"accountID"`
-	Description string         `json:"description"`
-	File        graphql.Upload `json:"file"`
-}
-
 type Todo struct {
 	ID string `json:"id"`
 }

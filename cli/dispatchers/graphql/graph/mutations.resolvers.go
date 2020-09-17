@@ -5,17 +5,16 @@ package graph
 
 import (
 	"arquil/accounts/cli/dispatchers/graphql/graph/generated"
-	"arquil/accounts/cli/dispatchers/graphql/graph/model"
 	"arquil/accounts/internal/cases/account"
 	"arquil/accounts/internal/models"
 	"context"
+	"fmt"
 
 	e "github.com/carlware/go-common/errors"
 	"github.com/carlware/go-common/log"
 	"go.uber.org/zap"
 	"golang.org/x/xerrors"
 )
-
 
 func (r *mutationResolver) CreateAccount(ctx context.Context, input account.CreateRequest) (*models.Account, error) {
 	opts := &account.Opts{r.Ctrl.Repositories.Account}
@@ -28,6 +27,13 @@ func (r *mutationResolver) CreateAccount(ctx context.Context, input account.Crea
 	return res, nil
 }
 
+func (r *mutationResolver) UpdateAccount(ctx context.Context, id string, input account.UpdateRequest) (*models.Account, error) {
+	panic(fmt.Errorf("not implemented"))
+}
+
+func (r *mutationResolver) DeleteAccount(ctx context.Context, id string) (*models.Account, error) {
+	panic(fmt.Errorf("not implemented"))
+}
 
 // Mutation returns generated.MutationResolver implementation.
 func (r *Resolver) Mutation() generated.MutationResolver { return &mutationResolver{r} }

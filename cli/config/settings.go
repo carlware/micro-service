@@ -18,7 +18,7 @@ type Configuration struct {
 		AutoMigrate bool   `yaml:"-" default:"false"`
 		Host        string `yaml:"host" default:"localhost:5432"`
 		Username    string `yaml:"username" default:"golang"`
-		Database    string `yaml:"database" default:"condo"`
+		Database    string `yaml:"database" default:"db"`
 		Password    string `yaml:"password" default:""`
 	} `yaml:"psql"`
 

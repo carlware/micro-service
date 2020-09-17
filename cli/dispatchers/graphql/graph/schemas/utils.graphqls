@@ -10,7 +10,4 @@ directive @goField(forceResolver: Boolean, name: String) on INPUT_FIELD_DEFINITI
 
 scalar Time
 scalar UInt32
-scalar Scope
-scalar Rule
-scalar TakesEffect
 scalar Upload
