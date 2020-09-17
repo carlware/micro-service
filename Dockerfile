@@ -36,8 +36,8 @@ COPY --chown=golang:golang . .
 # Private repo
 # RUN git config \
 #     --global \
-#     url."https://${GIT_ID}:${GIT_TOKEN}@gitlab.com/condomilux/go-common".insteadOf \
-#     "https://gitlab.com/condomilux/go-common"
+#     url."https://${GIT_ID}:${GIT_TOKEN}@gitlab.com/company/go-common".insteadOf \
+#     "https://gitlab.com/company/go-common"
 
 # download tools
 RUN make -C tools
@@ -62,11 +62,11 @@ ARG VCS_REF
 ARG APP_NAME
 
 # Metadata
-LABEL com.condomilux.build-date=$BUILD_DATE
-LABEL com.condomilux.name=$APP_NAME
-LABEL com.condomilux.vcs-ref=$VCS_REF
-LABEL com.condomilux.vendor="condomilux"
-LABEL com.condomilux.version=$VERSION
+LABEL com.$VENDOR.build-date=$BUILD_DATE
+LABEL com.$VENDOR.name=$APP_NAME
+LABEL com.$VENDOR.vcs-ref=$VCS_REF
+LABEL com.$VENDOR.vendor="$VENDOR"
+LABEL com.$VENDOR.version=$VERSION
 
 COPY --from=builder /src/group.nobody /etc/group
 COPY --from=builder /src/passwd.nobody /etc/passwd

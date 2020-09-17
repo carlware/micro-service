@@ -1,9 +1,9 @@
 package cmd
 
 import (
-	"condomilux/condo-admin/cli/cmd/migrations"
-	"condomilux/condo-admin/cli/cmd/serve"
-	"condomilux/condo-admin/cli/cmd/version"
+	"arquil/accounts/cli/cmd/migrations"
+	"arquil/accounts/cli/cmd/serve"
+	"arquil/accounts/cli/cmd/version"
 
 	"github.com/spf13/cobra"
 )

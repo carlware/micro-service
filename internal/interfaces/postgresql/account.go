@@ -1,9 +1,9 @@
 package postgresql
 
 import (
-	"condomilux/condo-admin/internal/helpers"
-	"condomilux/condo-admin/internal/interfaces"
-	"condomilux/condo-admin/internal/models"
+	"arquil/accounts/internal/helpers"
+	"arquil/accounts/internal/interfaces"
+	"arquil/accounts/internal/models"
 	"context"
 
 	"github.com/go-pg/pg"

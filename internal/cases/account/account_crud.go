@@ -1,8 +1,8 @@
 package account
 
 import (
-	"condomilux/condo-admin/internal/helpers"
-	"condomilux/condo-admin/internal/models"
+	"arquil/accounts/internal/helpers"
+	"arquil/accounts/internal/models"
 	"context"
 
 	"github.com/carlware/go-common/errors"

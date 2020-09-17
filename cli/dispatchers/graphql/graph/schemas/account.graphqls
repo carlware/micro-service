@@ -1,4 +1,4 @@
-type Account @goModel(model: "condomilux/condo-admin/internal/models.Account") {
+type Account @goModel(model: "$VENDOR/accounts/internal/models.Account") {
   id: ID!
   bankName: String!
   accountNumber: String!
@@ -6,13 +6,13 @@ type Account @goModel(model: "condomilux/condo-admin/internal/models.Account") {
   created: Time!
 }
 
-input CreateAccountInput @goModel(model: "condomilux/condo-admin/internal/cases/account.CreateRequest") {
+input CreateAccountInput @goModel(model: "$VENDOR/accounts/internal/cases/account.CreateRequest") {
   bankName: String!
   accountNumber: String!
   holder: String!
 }
 
-input UpdateAccountInput @goModel(model: "condomilux/condo-admin/internal/cases/account.UpdateRequest") {
+input UpdateAccountInput @goModel(model: "$VENDOR/accounts/internal/cases/account.UpdateRequest") {
   bankName: String
   accountNumber: String
   holder: String

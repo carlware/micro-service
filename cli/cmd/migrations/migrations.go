@@ -1,7 +1,7 @@
 package migrations
 
 import (
-	"condomilux/condo-admin/cli/config"
+	"arquil/accounts/cli/config"
 	"context"
 	"database/sql"
 	"fmt"

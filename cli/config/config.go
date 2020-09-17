@@ -23,7 +23,7 @@ func InitLogger(ctx context.Context, cfg *Configuration) {
 		Debug:       cfg.Debug.Enable,
 		LogLevel:    cfg.Logger.LogLevel,
 		Encoding:    cfg.Logger.Encoding,
-		AppName:     "condo-admin",
+		AppName:     "$PACKAGE",
 		Environment: cfg.Environment,
 		Version:     version.Version,
 		Revision:    version.Revision,

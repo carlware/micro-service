@@ -1,7 +1,7 @@
 package main
 
 import (
-	"condomilux/condo-admin/cli/cmd"
+	"arquil/accounts/cli/cmd"
 	"log"
 
 	_ "github.com/lib/pq"

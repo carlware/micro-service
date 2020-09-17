@@ -1,7 +1,7 @@
 package version
 
 import (
-	"condomilux/condo-admin/internal/version"
+	"arquil/accounts/internal/version"
 	"fmt"
 
 	"github.com/spf13/cobra"

@@ -1,7 +1,7 @@
 package postgresql
 
 import (
-	"condomilux/condo-admin/internal/models"
+	"arquil/accounts/internal/models"
 
 	"github.com/carlware/go-common/db/postgresql"
 

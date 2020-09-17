@@ -1,9 +1,9 @@
 package dispatchers
 
 import (
-	"condomilux/condo-admin/cli/config"
-	"condomilux/condo-admin/internal/interfaces"
-	"condomilux/condo-admin/internal/interfaces/postgresql"
+	"arquil/accounts/cli/config"
+	"arquil/accounts/internal/interfaces"
+	"arquil/accounts/internal/interfaces/postgresql"
 
 	"github.com/go-pg/pg"
 )

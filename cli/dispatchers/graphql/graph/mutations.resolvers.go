@@ -4,10 +4,10 @@ package graph
 // will be copied through when generating and any unknown code will be moved to the end.
 
 import (
-	"condomilux/condo-admin/cli/dispatchers/graphql/graph/generated"
-	"condomilux/condo-admin/cli/dispatchers/graphql/graph/model"
-	"condomilux/condo-admin/internal/cases/account"
-	"condomilux/condo-admin/internal/models"
+	"arquil/accounts/cli/dispatchers/graphql/graph/generated"
+	"arquil/accounts/cli/dispatchers/graphql/graph/model"
+	"arquil/accounts/internal/cases/account"
+	"arquil/accounts/internal/models"
 	"context"
 
 	e "github.com/carlware/go-common/errors"

@@ -1,13 +1,13 @@
 package interfaces
 
 import (
-	"condomilux/condo-admin/internal/models"
+	"arquil/accounts/internal/models"
 	"context"
 
 	_ "github.com/golang/mock/mockgen/model" // I justify
 )
 
-//go:generate mockgen -destination mocks/account.repository.gen.go -package mocks condomilux/condo-admin/internal/interfaces Account
+//go:generate mockgen -destination mocks/account.repository.gen.go -package mocks arquil/accounts/internal/interfaces Account
 type Account interface {
 	Add(ctx context.Context, account *models.Account) (*models.Account, error)
 	Remove(ctx context.Context, account *models.Account) (*models.Account, error)

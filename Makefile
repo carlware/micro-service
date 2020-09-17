@@ -1,7 +1,7 @@
 GO:=$(or ${GO_EXEC},go)
 MAGE = ./tools/bin/mage
 
-APP=condomilux/condo-admin
+APP=arquil/accounts
 DATE=$(or ${BUILD_DATE},"`date '+%Y-%m-%dT%H:%M:%S'`")
 VER=$(or ${VERSION},"`git describe --tags --abbrev=0 | cut -c 2-`")
 VREF=$(or ${VCS_REF},"`git rev-parse --abbrev-ref HEAD`")

@@ -22,7 +22,7 @@ var (
 	goFiles    = getGoFiles()
 	goSrcFiles = getGoSrcFiles()
 	// settings
-	appName   = "condomilux/condo-admin"
+	appName   = "arquil/accounts"
 	binName   = "app"
 	grpcPath  = "proto"
 	mockPaths = []string{
@@ -50,7 +50,7 @@ func init() {
 }
 
 func Build() {
-	banner := figure.NewFigure("condo-admin", "", true)
+	banner := figure.NewFigure("$PACKAGE", "", true)
 	banner.Print()
 
 	fmt.Println("")

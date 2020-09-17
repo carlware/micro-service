@@ -1,10 +1,10 @@
 package graphql
 
 import (
-	"condomilux/condo-admin/cli/config"
-	"condomilux/condo-admin/cli/dispatchers"
-	"condomilux/condo-admin/cli/dispatchers/graphql/graph"
-	"condomilux/condo-admin/cli/dispatchers/graphql/graph/generated"
+	"arquil/accounts/cli/config"
+	"arquil/accounts/cli/dispatchers"
+	"arquil/accounts/cli/dispatchers/graphql/graph"
+	"arquil/accounts/cli/dispatchers/graphql/graph/generated"
 	"context"
 
 	"github.com/99designs/gqlgen/graphql/handler"

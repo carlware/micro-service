@@ -1,9 +1,9 @@
 package serve
 
 import (
-	"condomilux/condo-admin/cli/config"
-	"condomilux/condo-admin/cli/dispatchers"
-	"condomilux/condo-admin/cli/dispatchers/graphql"
+	"arquil/accounts/cli/config"
+	"arquil/accounts/cli/dispatchers"
+	"arquil/accounts/cli/dispatchers/graphql"
 	"context"
 
 	"github.com/carlware/go-common/log"

@@ -1,7 +1,7 @@
 package account
 
 import (
-	"condomilux/condo-admin/internal/interfaces"
+	"arquil/accounts/internal/interfaces"
 )
 
 // Opts in a comment

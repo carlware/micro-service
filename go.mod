@@ -1,4 +1,4 @@
-module condomilux/condo-admin
+module arquil/accounts
 
 go 1.14
 

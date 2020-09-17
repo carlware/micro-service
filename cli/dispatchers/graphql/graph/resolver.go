@@ -1,6 +1,6 @@
 package graph
 
-import "condomilux/condo-admin/cli/dispatchers"
+import "arquil/accounts/cli/dispatchers"
 
 // This file will not be regenerated automatically.
 //

@@ -3,9 +3,9 @@
 package account
 
 import (
-	"condomilux/condo-admin/internal/helpers"
-	"condomilux/condo-admin/internal/interfaces/mocks"
-	"condomilux/condo-admin/internal/models"
+	"arquil/accounts/internal/helpers"
+	"arquil/accounts/internal/interfaces/mocks"
+	"arquil/accounts/internal/models"
 	"context"
 	"testing"
 
