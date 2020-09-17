@@ -1,0 +1,4 @@
+# just to pass the glqgen validation
+type Todo {
+  id: ID!
+}

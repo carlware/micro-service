@@ -1,0 +1,4 @@
+FROM golang:1.14-alpine
+
+RUN export GO111MODULE=on
+RUN apk update && apk add --no-cache make gcc musl-dev linux-headers git

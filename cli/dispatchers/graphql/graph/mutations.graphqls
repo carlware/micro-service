@@ -1,0 +1,6 @@
+type Mutation {
+  #Account
+  createAccount(input: CreateAccountInput!): Account!
+  updateAccount(id: String!, input: UpdateAccountInput!): Account!
+  deleteAccount(id: String!): Account!
+}

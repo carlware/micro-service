@@ -1,0 +1,7 @@
+.git
+bin
+vendor
+tools/vendor
+tools/bin
+deployment
+test-results
