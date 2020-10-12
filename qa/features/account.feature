@@ -4,11 +4,13 @@ Feature: account
   I need to able to manage accounts
 
   Scenario: should get a list of accounts
-    When I send "GET" request to "/"
+    When I send "GET" request to "/query"
     Then The response code should be 200
     And The reponse should match json:
     """
     {
-      "accounts": []
+      "data": {
+        "accounts": []
+      }      
     }
     """
