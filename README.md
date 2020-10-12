@@ -8,10 +8,10 @@ This project is a little example how to structure a microservice. This is an att
 In the "cli" folder are the commands that can be used with this service.
 
 ### internal
-Our main code resides in this folder.
+The main code resides in this folder.
 
 ### QA
-Our QA test will be inside this folder.
+The QA tests will be inside this folder.
 
 ### tools
 This is where are the tools needed for compile and test our code.
@@ -55,12 +55,12 @@ curl 'http://localhost:8080/query' -H 'Accept-Encoding: gzip, deflate, br' -H 'C
 * [x] Add memorydb 
 * [x] Add migrations tool
 * [x] Improve documentation
-* [] Test graphql marshall and unmarshall
-* [] Add QA test cases
-* [] Add REST API dispatcher
-* [] Improve tools installation process
-* [] Improve magefile and makefile
-* [] Add integration tests for postgresql db
-* [] Improve Database interface
-* [] Add cache interface
-* [] Add GRPC comunication between microservices
+* [ ] Test graphql marshall and unmarshall
+* [ ] Add QA test cases
+* [ ] Add REST API dispatcher
+* [ ] Improve tools installation process
+* [ ] Improve magefile and makefile
+* [ ] Add integration tests for postgresql db
+* [ ] Improve Database interface
+* [ ] Add cache interface
+* [ ] Add GRPC comunication between microservices
