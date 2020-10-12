@@ -1,9 +1,9 @@
 package serve
 
 import (
-	"arquil/accounts/cli/config"
-	"arquil/accounts/cli/dispatchers"
-	"arquil/accounts/cli/dispatchers/graphql"
+	"carlware/accounts/cli/config"
+	"carlware/accounts/cli/dispatchers"
+	"carlware/accounts/cli/dispatchers/graphql"
 	"context"
 
 	"github.com/carlware/go-common/log"

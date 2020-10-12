@@ -1,7 +1,7 @@
 package main
 
 import (
-	"arquil/accounts/cli/cmd"
+	"carlware/accounts/cli/cmd"
 	"log"
 
 	_ "github.com/lib/pq"

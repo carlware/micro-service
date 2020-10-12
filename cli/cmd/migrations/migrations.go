@@ -1,7 +1,7 @@
 package migrations
 
 import (
-	"arquil/accounts/cli/config"
+	"carlware/accounts/cli/config"
 	"context"
 	"database/sql"
 	"fmt"

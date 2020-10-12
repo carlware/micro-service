@@ -1,10 +1,10 @@
 package graphql
 
 import (
-	"arquil/accounts/cli/config"
-	"arquil/accounts/cli/dispatchers"
-	"arquil/accounts/cli/dispatchers/graphql/graph"
-	"arquil/accounts/cli/dispatchers/graphql/graph/generated"
+	"carlware/accounts/cli/config"
+	"carlware/accounts/cli/dispatchers"
+	"carlware/accounts/cli/dispatchers/graphql/graph"
+	"carlware/accounts/cli/dispatchers/graphql/graph/generated"
 	"context"
 
 	"github.com/99designs/gqlgen/graphql/handler"

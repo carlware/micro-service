@@ -10,6 +10,7 @@ import (
 
 func TestIDGenerator(t *testing.T) {
 	id := IDGeneratorFunc()
+	
 	assert.NotNil(t, id)
 	assert.Equal(t, len(id), 32)
 }

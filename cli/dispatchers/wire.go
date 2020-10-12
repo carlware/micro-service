@@ -1,9 +1,9 @@
 package dispatchers
 
 import (
-	"arquil/accounts/cli/config"
-	"arquil/accounts/internal/interfaces"
-	"arquil/accounts/internal/interfaces/postgresql"
+	"carlware/accounts/cli/config"
+	"carlware/accounts/internal/interfaces"
+	"carlware/accounts/internal/interfaces/postgresql"
 
 	"github.com/go-pg/pg"
 )

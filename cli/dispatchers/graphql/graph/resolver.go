@@ -1,6 +1,6 @@
 package graph
 
-import "arquil/accounts/cli/dispatchers"
+import "carlware/accounts/cli/dispatchers"
 
 // This file will not be regenerated automatically.
 //

@@ -1,7 +1,7 @@
 package version
 
 import (
-	"arquil/accounts/internal/version"
+	"carlware/accounts/internal/version"
 	"fmt"
 
 	"github.com/spf13/cobra"

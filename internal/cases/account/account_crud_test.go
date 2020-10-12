@@ -3,9 +3,9 @@
 package account
 
 import (
-	"arquil/accounts/internal/helpers"
-	"arquil/accounts/internal/interfaces/mocks"
-	"arquil/accounts/internal/models"
+	"carlware/accounts/internal/helpers"
+	"carlware/accounts/internal/interfaces/mocks"
+	"carlware/accounts/internal/models"
 	"context"
 	"testing"
 
@@ -337,7 +337,7 @@ func TestDelete(t *testing.T) {
 		inspectErr func(err error, t *testing.T) // use for more precise error evaluation
 	}{
 		{
-			name: "new account get successfully",
+			name: "new account deleted successfully",
 			args: func(t *gomock.Controller) args {
 				p := mocks.NewMockAccount(t)
 				p.EXPECT().Remove(gomock.Any(), &models.Account{ID: "1"}).Return(fa, nil).Times(1)

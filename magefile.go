@@ -22,7 +22,7 @@ var (
 	goFiles    = getGoFiles()
 	goSrcFiles = getGoSrcFiles()
 	// settings
-	appName   = "arquil/accounts"
+	appName   = "carlware/accounts"
 	binName   = "app"
 	grpcPath  = "proto"
 	mockPaths = []string{
@@ -277,5 +277,5 @@ func normalizePath(name string) string {
 func TestTag(tag string) error {
 	color.Cyan("## Running tests")
 	sh.Run("mkdir", "-p", "test-results/junit")
-	return sh.RunV("gotestsum", "--", "-short", "-race", "-cover", "-tags="+tag, "./...")
+	return sh.RunV("gotestsum", "--no-summary=skipped", "--", "-short", "-race", "-cover", "-tags="+tag, "./...")
 }

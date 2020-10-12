@@ -1,8 +1,8 @@
 package account
 
 import (
-	"arquil/accounts/internal/helpers"
-	"arquil/accounts/internal/models"
+	"carlware/accounts/internal/helpers"
+	"carlware/accounts/internal/models"
 	"context"
 
 	"github.com/carlware/go-common/errors"

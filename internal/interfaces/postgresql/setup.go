@@ -1,7 +1,7 @@
 package postgresql
 
 import (
-	"arquil/accounts/internal/models"
+	"carlware/accounts/internal/models"
 
 	"github.com/carlware/go-common/db/postgresql"
 

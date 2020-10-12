@@ -4,8 +4,8 @@ package graph
 // will be copied through when generating and any unknown code will be moved to the end.
 
 import (
-	"arquil/accounts/cli/dispatchers/graphql/graph/generated"
-	"arquil/accounts/internal/models"
+	"carlware/accounts/cli/dispatchers/graphql/graph/generated"
+	"carlware/accounts/internal/models"
 	"context"
 )
 

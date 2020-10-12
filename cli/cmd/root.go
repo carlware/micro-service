@@ -1,9 +1,9 @@
 package cmd
 
 import (
-	"arquil/accounts/cli/cmd/migrations"
-	"arquil/accounts/cli/cmd/serve"
-	"arquil/accounts/cli/cmd/version"
+	"carlware/accounts/cli/cmd/migrations"
+	"carlware/accounts/cli/cmd/serve"
+	"carlware/accounts/cli/cmd/version"
 
 	"github.com/spf13/cobra"
 )

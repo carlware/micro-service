@@ -1,7 +1,7 @@
 package account
 
 import (
-	"arquil/accounts/internal/interfaces"
+	"carlware/accounts/internal/interfaces"
 )
 
 // Opts in a comment

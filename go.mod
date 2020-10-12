@@ -1,4 +1,4 @@
-module arquil/accounts
+module carlware/accounts
 
 go 1.14
 
@@ -20,7 +20,7 @@ require (
 	github.com/golang/mock v1.4.3
 	github.com/golang/protobuf v1.4.1 // indirect
 	github.com/imdario/mergo v0.3.9
-	github.com/jinzhu/copier v0.0.0-20190924061706-b57f9002281a
+	github.com/jinzhu/copier v0.0.0-20190924061706-b57f9002281a // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/lib/pq v1.5.2
 	github.com/magefile/mage v1.10.0

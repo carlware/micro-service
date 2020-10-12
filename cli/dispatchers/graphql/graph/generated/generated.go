@@ -3,10 +3,10 @@
 package generated
 
 import (
-	"arquil/accounts/cli/dispatchers/graphql/graph/model"
-	"arquil/accounts/internal/cases/account"
-	"arquil/accounts/internal/models"
 	"bytes"
+	"carlware/accounts/cli/dispatchers/graphql/graph/model"
+	"carlware/accounts/internal/cases/account"
+	"carlware/accounts/internal/models"
 	"context"
 	"errors"
 	"strconv"
@@ -272,7 +272,7 @@ var sources = []*ast.Source{
   accounts: [Account!]
 }
 `, BuiltIn: false},
-	&ast.Source{Name: "cli/dispatchers/graphql/graph/schemas/account.graphqls", Input: `type Account @goModel(model: "arquil/accounts/internal/models.Account") {
+	&ast.Source{Name: "cli/dispatchers/graphql/graph/schemas/account.graphqls", Input: `type Account @goModel(model: "carlware/accounts/internal/models.Account") {
   id: ID!
   bankName: String!
   accountNumber: String!
@@ -280,13 +280,13 @@ var sources = []*ast.Source{
   created: Time!
 }
 
-input CreateAccountInput @goModel(model: "arquil/accounts/internal/cases/account.CreateRequest") {
+input CreateAccountInput @goModel(model: "carlware/accounts/internal/cases/account.CreateRequest") {
   bankName: String!
   accountNumber: String!
   holder: String!
 }
 
-input UpdateAccountInput @goModel(model: "arquil/accounts/internal/cases/account.UpdateRequest") {
+input UpdateAccountInput @goModel(model: "carlware/accounts/internal/cases/account.UpdateRequest") {
   bankName: String
   accountNumber: String
   holder: String
@@ -323,7 +323,7 @@ func (ec *executionContext) field_Mutation_createAccount_args(ctx context.Contex
 	args := map[string]interface{}{}
 	var arg0 account.CreateRequest
 	if tmp, ok := rawArgs["input"]; ok {
-		arg0, err = ec.unmarshalNCreateAccountInput2arquilᚋaccountsᚋinternalᚋcasesᚋaccountᚐCreateRequest(ctx, tmp)
+		arg0, err = ec.unmarshalNCreateAccountInput2carlwareᚋaccountsᚋinternalᚋcasesᚋaccountᚐCreateRequest(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -359,7 +359,7 @@ func (ec *executionContext) field_Mutation_updateAccount_args(ctx context.Contex
 	args["id"] = arg0
 	var arg1 account.UpdateRequest
 	if tmp, ok := rawArgs["input"]; ok {
-		arg1, err = ec.unmarshalNUpdateAccountInput2arquilᚋaccountsᚋinternalᚋcasesᚋaccountᚐUpdateRequest(ctx, tmp)
+		arg1, err = ec.unmarshalNUpdateAccountInput2carlwareᚋaccountsᚋinternalᚋcasesᚋaccountᚐUpdateRequest(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -640,7 +640,7 @@ func (ec *executionContext) _Mutation_createAccount(ctx context.Context, field g
 	}
 	res := resTmp.(*models.Account)
 	fc.Result = res
-	return ec.marshalNAccount2ᚖarquilᚋaccountsᚋinternalᚋmodelsᚐAccount(ctx, field.Selections, res)
+	return ec.marshalNAccount2ᚖcarlwareᚋaccountsᚋinternalᚋmodelsᚐAccount(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_updateAccount(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -681,7 +681,7 @@ func (ec *executionContext) _Mutation_updateAccount(ctx context.Context, field g
 	}
 	res := resTmp.(*models.Account)
 	fc.Result = res
-	return ec.marshalNAccount2ᚖarquilᚋaccountsᚋinternalᚋmodelsᚐAccount(ctx, field.Selections, res)
+	return ec.marshalNAccount2ᚖcarlwareᚋaccountsᚋinternalᚋmodelsᚐAccount(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_deleteAccount(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -722,7 +722,7 @@ func (ec *executionContext) _Mutation_deleteAccount(ctx context.Context, field g
 	}
 	res := resTmp.(*models.Account)
 	fc.Result = res
-	return ec.marshalNAccount2ᚖarquilᚋaccountsᚋinternalᚋmodelsᚐAccount(ctx, field.Selections, res)
+	return ec.marshalNAccount2ᚖcarlwareᚋaccountsᚋinternalᚋmodelsᚐAccount(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query_account(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -763,7 +763,7 @@ func (ec *executionContext) _Query_account(ctx context.Context, field graphql.Co
 	}
 	res := resTmp.(*models.Account)
 	fc.Result = res
-	return ec.marshalNAccount2ᚖarquilᚋaccountsᚋinternalᚋmodelsᚐAccount(ctx, field.Selections, res)
+	return ec.marshalNAccount2ᚖcarlwareᚋaccountsᚋinternalᚋmodelsᚐAccount(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query_accounts(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -794,7 +794,7 @@ func (ec *executionContext) _Query_accounts(ctx context.Context, field graphql.C
 	}
 	res := resTmp.([]*models.Account)
 	fc.Result = res
-	return ec.marshalOAccount2ᚕᚖarquilᚋaccountsᚋinternalᚋmodelsᚐAccountᚄ(ctx, field.Selections, res)
+	return ec.marshalOAccount2ᚕᚖcarlwareᚋaccountsᚋinternalᚋmodelsᚐAccountᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query___type(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -2447,11 +2447,11 @@ func (ec *executionContext) ___Type(ctx context.Context, sel ast.SelectionSet, o
 
 // region    ***************************** type.gotpl *****************************
 
-func (ec *executionContext) marshalNAccount2arquilᚋaccountsᚋinternalᚋmodelsᚐAccount(ctx context.Context, sel ast.SelectionSet, v models.Account) graphql.Marshaler {
+func (ec *executionContext) marshalNAccount2carlwareᚋaccountsᚋinternalᚋmodelsᚐAccount(ctx context.Context, sel ast.SelectionSet, v models.Account) graphql.Marshaler {
 	return ec._Account(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNAccount2ᚖarquilᚋaccountsᚋinternalᚋmodelsᚐAccount(ctx context.Context, sel ast.SelectionSet, v *models.Account) graphql.Marshaler {
+func (ec *executionContext) marshalNAccount2ᚖcarlwareᚋaccountsᚋinternalᚋmodelsᚐAccount(ctx context.Context, sel ast.SelectionSet, v *models.Account) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "must not be null")
@@ -2475,7 +2475,7 @@ func (ec *executionContext) marshalNBoolean2bool(ctx context.Context, sel ast.Se
 	return res
 }
 
-func (ec *executionContext) unmarshalNCreateAccountInput2arquilᚋaccountsᚋinternalᚋcasesᚋaccountᚐCreateRequest(ctx context.Context, v interface{}) (account.CreateRequest, error) {
+func (ec *executionContext) unmarshalNCreateAccountInput2carlwareᚋaccountsᚋinternalᚋcasesᚋaccountᚐCreateRequest(ctx context.Context, v interface{}) (account.CreateRequest, error) {
 	return ec.unmarshalInputCreateAccountInput(ctx, v)
 }
 
@@ -2521,7 +2521,7 @@ func (ec *executionContext) marshalNTime2timeᚐTime(ctx context.Context, sel as
 	return res
 }
 
-func (ec *executionContext) unmarshalNUpdateAccountInput2arquilᚋaccountsᚋinternalᚋcasesᚋaccountᚐUpdateRequest(ctx context.Context, v interface{}) (account.UpdateRequest, error) {
+func (ec *executionContext) unmarshalNUpdateAccountInput2carlwareᚋaccountsᚋinternalᚋcasesᚋaccountᚐUpdateRequest(ctx context.Context, v interface{}) (account.UpdateRequest, error) {
 	return ec.unmarshalInputUpdateAccountInput(ctx, v)
 }
 
@@ -2751,7 +2751,7 @@ func (ec *executionContext) marshalN__TypeKind2string(ctx context.Context, sel a
 	return res
 }
 
-func (ec *executionContext) marshalOAccount2ᚕᚖarquilᚋaccountsᚋinternalᚋmodelsᚐAccountᚄ(ctx context.Context, sel ast.SelectionSet, v []*models.Account) graphql.Marshaler {
+func (ec *executionContext) marshalOAccount2ᚕᚖcarlwareᚋaccountsᚋinternalᚋmodelsᚐAccountᚄ(ctx context.Context, sel ast.SelectionSet, v []*models.Account) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -2778,7 +2778,7 @@ func (ec *executionContext) marshalOAccount2ᚕᚖarquilᚋaccountsᚋinternal�
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNAccount2ᚖarquilᚋaccountsᚋinternalᚋmodelsᚐAccount(ctx, sel, v[i])
+			ret[i] = ec.marshalNAccount2ᚖcarlwareᚋaccountsᚋinternalᚋmodelsᚐAccount(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)

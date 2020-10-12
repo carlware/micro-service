@@ -1,9 +1,9 @@
 package postgresql
 
 import (
-	"arquil/accounts/internal/helpers"
-	"arquil/accounts/internal/interfaces"
-	"arquil/accounts/internal/models"
+	"carlware/accounts/internal/helpers"
+	"carlware/accounts/internal/interfaces"
+	"carlware/accounts/internal/models"
 	"context"
 
 	"github.com/go-pg/pg"
