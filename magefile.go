@@ -50,7 +50,7 @@ func init() {
 }
 
 func Build() {
-	banner := figure.NewFigure("$PACKAGE", "", true)
+	banner := figure.NewFigure("ACCOUNTS", "", true)
 	banner.Print()
 
 	fmt.Println("")
