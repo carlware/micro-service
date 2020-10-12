@@ -29,7 +29,7 @@ go run mage.go
 make build
 
 # running
-# this will expose a graphQL server on http://127.0.0.1:8080 (can be tested on the browser)
+# this will expose a graphQL server on [http://127.0.0.1:8080](http://127.0.0.1:8080) (can be tested on the browser)
 ./bin/app serve
 
 # running (using go)
