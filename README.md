@@ -5,16 +5,19 @@ This project is a little example how to structure a microservice. This is an att
 ## How to read this
 
 ### CLI
-In the "cli" folder are the commands that can be used with this service.
+In the "cli" folder are the commands that can be used. And the endpoints are connected to the bussines rules (use cases), at this moment this is done using GraphQL, but I going to use REST API also. 
 
-### internal
-The main code resides in this folder.
+### Internal
+The main code resides here. Our models, bussines rules, interfaces for connections with databases or another services.  
 
 ### QA
 The QA tests will be inside this folder.
 
-### tools
+### Tools
 This is where are the tools needed for compile and test our code.
+
+### Ahother files
+There another files like `Dockerfile` `docker-compose` `magefile` `Makefile` that are used for make simple the building, testing the service.
 
 ## How to run
 ```
@@ -34,7 +37,7 @@ go run cli/main.go serve
 
 # testing using curl
 # this performs a query
-curl 'http://localhost:8080/query' -H 'Accept-Encoding: gzip, deflate, br' -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Connection: keep-alive' -H 'DNT: 1' -H 'Origin: http://localhost:8080' --data-binary '{"query":"# Write your query or mutation here\nquery {\n  accounts {\n    id\n    holder\n  }\n}"}' --compressed
+curl 'http://localhost:8080/query' -H 'Accept-Encoding: gzip, deflate, br' -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Connection: keep-alive' -H 'DNT: 1' -H 'Origin: http://localhost:8080' --data-binary '{"query":"query {\n  accounts {\n    id\n    holder\n  }\n}"}' --compressed
 
 # this performs a mutation
 curl 'http://localhost:8080/query' -H 'Accept-Encoding: gzip, deflate, br' -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Connection: keep-alive' -H 'DNT: 1' -H 'Origin: http://localhost:8080' --data-binary '{"query":"mutation {\n  createAccount(input: {\n    bankName: \"HSBC\",\n    accountNumber: \"123456789012345678\",\n    holder: \"CRL\"\n  }) {\n    id\n  }\n}"}' --compressed
