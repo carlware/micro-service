@@ -4,6 +4,7 @@ import (
 	"carlware/accounts/cli/config"
 	"carlware/accounts/internal/interfaces"
 	"carlware/accounts/internal/interfaces/postgresql"
+	"carlware/accounts/internal/interfaces/memorydb"
 
 	"github.com/go-pg/pg"
 )
@@ -25,12 +26,33 @@ func createPostgresqlDatabase(cfg *config.Configuration) *pg.DB {
 	return db
 }
 
-func NewController(cfg *config.Configuration) *Controller {
+func NewPostgrestController(cfg *config.Configuration) *Controller {
 	db := createPostgresqlDatabase(cfg)
 
 	return &Controller{
 		Repositories: &Repositories{
 			Account:             postgresql.NewAccount(db),
 		},
+	}
+}
+
+func NewMemorydbController() *Controller {
+
+	return &Controller{
+		Repositories: &Repositories{
+			Account:             memorydb.NewAccount(),
+		},
+	}
+}
+
+func NewController(cfg *config.Configuration) *Controller {
+
+	switch(cfg.Database){
+	case "postgresql":
+		return NewPostgrestController(cfg)
+	case "memorydb":
+		return NewMemorydbController()
+	default:
+		return nil
 	}
 }

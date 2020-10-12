@@ -3,6 +3,7 @@ package config
 // Configuration settings
 type Configuration struct {
 	Environment string `yaml:"environment" default:"local"`
+	Database    string `yaml:"database" default:"memorydb"`
 
 	Debug struct {
 		Enable bool `yaml:"enable" default:"false" comment:"allow debug mode"`
@@ -13,6 +14,8 @@ type Configuration struct {
 		Encoding string `yaml:"encoding" default:"console"`
 		Sentry   string `yaml:"sentry" default:"dsn"`
 	} `yaml:"logger"`
+
+
 
 	Psql struct {
 		AutoMigrate bool   `yaml:"-" default:"false"`
