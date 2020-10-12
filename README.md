@@ -1,4 +1,4 @@
-Accounts microservice
+# Accounts microservice
 
 This project is a little example how to structure a microservice. This is an attempt to use clean patterns applied in order to have a well tested microservice. 
 
